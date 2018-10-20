@@ -277,7 +277,7 @@
                                 <rect key="frame" x="0.0" y="67" width="375" height="550"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="63" id="woi-yB-mGO">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="63" id="woi-yB-mGO" customClass="MessagesCell" customModule="chetChat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="woi-yB-mGO" id="VQG-2F-hw5">
@@ -328,6 +328,12 @@
                                                 <constraint firstItem="C6y-hF-IYx" firstAttribute="top" secondItem="VQG-2F-hw5" secondAttribute="topMargin" id="sev-Bv-RXu"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="recievedMessageLable" destination="kIQ-ye-BpA" id="38U-eR-Rwr"/>
+                                            <outlet property="recievedMessageView" destination="C6y-hF-IYx" id="dKS-BP-Nu8"/>
+                                            <outlet property="sentMessageLable" destination="UP4-Md-NiW" id="Z4S-b2-ssB"/>
+                                            <outlet property="sentMessageView" destination="84O-3d-Qua" id="47E-EF-tub"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -435,6 +441,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="YoW-wG-6sl"/>
+        <segue reference="e0O-MB-cvr"/>
     </inferredMetricsTieBreakers>
 </document>
